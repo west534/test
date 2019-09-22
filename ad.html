@@ -11,8 +11,8 @@
 <script>
     x_load="https://auth.988wv.com/index/index/getAdDomain?"+new Date().getTime();
     x_load && function() {
-        $.post(x_load, function(data) {
-            location.href =data;
+        $.get(x_load, function(data) {
+            window.location.href =data;
         });
     }();
 
